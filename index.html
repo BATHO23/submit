@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Search</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="car">
+   <h1> 
+    <p>Weather Search</p> 
+        <p id="current-time"></p>    <div class="container">
+        <p id="current-date"></p>
+    </h1>
+      <p>
+        <button id="current-location" class="btn btn-secondary">
+          Use Current Location
+        </button>
+      </p>
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="Enter a city..." />
+        <button type="submit">Search</button>
+      </form>
+      <div id="weather-result">
+        <h2 id="weather-description"></h2>
+        <p>Temperatue : <span id="temperature"></span></p>
+        <p>Humidity : <span id="humidity"></span></p>
+        <p>Wind Speed: <span id="wind-speed"></span></p>
+        <img id="weather-icon" src="" alt="Weather Icon" />
+
+        <h3>5 Day Forecast:</h3>
+        <div id="forecast-container">
+          <div class="forecast-day" id="day-1">
+            <h4>Day 1</h4>
+            <p>Temperature: <span id="temp-day-1"></span>&deg;c</p>
+            <img id="icon-day-1" src="" alt="Weather Icon" />
+          </div>
+          <div class="forecast-day" id="day-2">
+            <h4>Day 2</h4>
+            <p>Temperature: <span id="temp-day-2"></span>&deg; C</p>
+            <img id="icon-day-2" src="" alt="Weather Icon" />
+          </div>
+          <div class="forecast-day" id="day-3">
+            <h4>Day 3</h4>
+            <p>Temperature: <span id="temp-day-3"></span>&deg; C</p>
+            <img id="icon-day-3" src="" alt="Weather Icon" />
+          </div>
+          <div class="forecast-day" id="day-4">
+            <h4>Day 4</h4>
+            <p>Temperature: <span id="temp-day-4"></span>&deg;C</p>
+            <img id="icon-day-4" src="" alt="Weather Icon" />
+          </div>
+          <div class="forecast-day" id="day-5">
+            <h4>Day 5</h4>
+            <p>Temperature: <span id="temp-day-5"></span>&deg; C </p>
+            <img id="icon-day-5" src="" alt="Weather Icon" />
+          </div>
+        </div>
+
+        <button id="convert-temp" class="btn btn-primary">
+          Convert Temperature
+        </button>
+           <div class="container">
+      <div class="card">
+        <!-- Content inside the card can be added here -->
+      </div>
+    </div>
+      </div>
+    </div>
+     </div>
+    <script src="script.js"></script>
+  </body>
+</html>
