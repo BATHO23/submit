@@ -1,5 +1,5 @@
 const UNSPLASH_API_KEY = "v1Ywe_PlkifPWtvKQWuh-5qX1vHYFGzzKoCtrsNEhaU";
-const API_KEY = "2f5262129af8d21e1d3fe120a5f8c838";
+const API_KEY = "e430c3f71aa0d3235b28e8f3f0fe757c";
 const FORECAST_API_URL = "https://api.openweathermap.org/data/2.5/forecast";
 const UNSPLASH_API_URL = "https://api.unsplash.com/photos/random";
 const BASE_URL = "https://api.openweathermap.org/data/2.5/";
