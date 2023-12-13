@@ -148,17 +148,7 @@ function updateForecastTemperatures(unit) {
   }
 }
 
-// Modify the convertTemperature function to also convert forecast temperatures
-function convertTemperature() {
-  const temperatureElement = document.getElementById('temperature');
-  const tempValue = temperatureElement.textContent.trim().split(' ')[0];
-  let newTemp;
-  let unit;
-  if (temperatureElement.textContent.includes('C')) {
-    newTemp = (tempValue * 9) / 5 + 32;
-    unit = 'F';
-  } else {
-    newTemp = ((tempValue - 32) * 5) / 9;
+empValue - 32) * 5) / 9;
     unit = 'C';
   }
   displayConversionResult(newTemp, unit);
